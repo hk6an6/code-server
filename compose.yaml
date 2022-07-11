@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  code-server:
+    image: aragonn/code-server:latest
+    container_name: code-server
+    network_mode: host
+    user: 1000:1000
+    environment:
+      - TZ=America/Los_Angeles
+      - DOCKER_USER=nico
+    volumes:
+      - "/home/MyUser/.config:/home/coder/.config"
+      - "/home/MyUser/MyProject:/home/coder/MyProject"
