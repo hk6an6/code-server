@@ -32,6 +32,7 @@ filetype plugin indent on \n"\
   git clone https://github.com/altercation/vim-colors-solarized.git &&\
   git clone --depth=1 https://github.com/vim-syntastic/syntastic.git &&\
 echo "syntax on \n\
+execute pathogen#infect() \n\
 set background=dark \n\
 let g:solarized_termcolors=256 \n\
 set t_Co=256 \n\
@@ -42,7 +43,6 @@ set tabstop=2 \n\
 set softtabstop=2 \n\
 set shiftwidth=2 \n\
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit! \n\
-execute pathogen#infect() \n\
 set statusline+=%#warningmsg# \n\
 set statusline+=%{SyntasticStatuslineFlag()} \n\
 set statusline+=%* \n\
