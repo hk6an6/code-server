@@ -10,6 +10,7 @@ docker-compose up -d .
 cat ~/.config/code-server/config.yaml\
 | grep password \
 | awk '{print $2}'
+# then browse to http://localhost:8080
 ```
 ## About the files in this repo
 ### Dockerfile
