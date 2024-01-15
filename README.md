@@ -1,5 +1,5 @@
 # code-server
-A [code-server](https://github.com/coder/code-server) with build tools and vim. This needs docker in order to work.
+A [code-server](https://github.com/coder/code-server) with build tools and vim. Needs Docker.
 ## How-to
 ### Installing Docker with docker-compose
 ```
